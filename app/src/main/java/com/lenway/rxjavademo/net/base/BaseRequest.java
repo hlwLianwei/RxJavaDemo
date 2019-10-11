@@ -1,5 +1,8 @@
 package com.lenway.rxjavademo.net.base;
 
+import com.lenway.rxjavademo.entity.AppData;
+import com.lenway.rxjavademo.util.Checker;
+import com.lenway.rxjavademo.util.LogUtil;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.model.HttpParams;
@@ -12,10 +15,6 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.util.Iterator;
-
-import com.lenway.rxjavademo.entity.AppData;
-import com.lenway.rxjavademo.util.Checker;
-import com.lenway.rxjavademo.util.LogUtil;
 
 public abstract class BaseRequest
 {

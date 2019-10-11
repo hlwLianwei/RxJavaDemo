@@ -15,6 +15,8 @@ import com.lzy.okgo.model.Response;
 
 import java.util.List;
 
+import io.reactivex.rxjava3.core.Flowable;
+
 public class MainActivity extends AppCompatActivity
 {
 
@@ -64,5 +66,7 @@ public class MainActivity extends AppCompatActivity
                 super.onFinish();
             }
         });
+
+        Flowable.just("Hello world").subscribe(System.out::println);
     }
 }
